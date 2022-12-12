@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<style> 
+#title{
+    color:blueviolet;
+    font-style: italic;
+    font-size: 300%;
+}
+#p{
+    color:black;
+    font-size: 120%;
+  }
+#body{
+background-image:"Blast_Off.jpg";
+}
+</style>
+
+</head>
+    <p id="settimeout"></p>
+    <body> 
+        <h1 id="title"> Welcome to the UAT Space Program</h1>
+        <hr>
+        <p id="countdown"> Click below to Launch :)</p>
+        <button onclick="startCountdown()">Start the countdown!!</button>
+    <script>
+    var currTime, countdownInterval;
+    
+    function startCountdown(){
+      currTime = 5;
+      countdownInterval = setInterval(countdown, 1000);
+    }
+    
+    function countdown(){
+      let e = document.getElementById("countdown");
+      currTime = currTime - 1;
+    
+      if (currTime > 0) {
+        e.innerHTML = currTime.toString();
+      } else {
+        e.innerHTML = "Blast off!";
+        clearInterval(countdownInterval)
+      }
+    }
+    </script>
+    </body>
+</html>

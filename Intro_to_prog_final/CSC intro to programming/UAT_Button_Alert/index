@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--Sets the language as english-->
+<html lang="en">
+<!--Starts the document-->
+<head>
+    <!--sets the character set for viewing in most modern browsers-->
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+/*changes the button's look and font*/
+     button {
+    font-size: 1.1em;
+    background-color: #EBF5FF;
+    color: #4312AE;
+    border: 2px solid black;
+  }
+/*changes the color of buttons found this online and it's been very helpful*/
+  button:hover, button:focus, button:active {
+    /* swap colors */
+    color: #EBF5FF;
+    background-color: #4312AE;
+    cursor: pointer; /* displays a hand */
+  }
+    </style>
+</head>
+<body>
+    <!--Sets the button element in html as well as call the javascript-->
+    <button onclick="showalert1()">Start</button>
+    <!--calls a seperate javascript function that does the same thing-->
+    <button onclick="showalert2()">Stop</button>
+
+<script>
+    //sets function show alert1
+    function showalert1() {
+        //sets alert text as start 
+        var text="Start";
+        //calls the alert 
+        alert(text);
+    }
+    //sets function show alert2
+function showalert2() { 
+    //sets the alert text as stop
+    var textk="Stop";
+    //calls the alert 
+    alert(textk);
+}
+//ends the javascript function
+</script>
+</body>
+</html>

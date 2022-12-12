@@ -21,3 +21,23 @@
   background-color: #6e07dd;
   color: white;
 }
+#footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+}
+#title {
+   font-size: 300%;
+   text-align:center;
+   color:#DAF7A6;
+}
+#quote{
+  text-align: center;
+  color: #DAF7A6;
+}
+body{
+  background-image:url("Background1.jpeg");
+}
